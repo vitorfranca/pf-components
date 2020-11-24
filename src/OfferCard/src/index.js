@@ -114,22 +114,6 @@ OfferCard.PropTypes = {
 
 OfferCard.defaultProps = {
   blackCard: false,
-  enabledAmenities: [
-    "Unlimited access to home club",
-    "Free fitness training",
-    "Free WiFi in the club",
-    "PF+ Digital Workouts",
-    "Use of Any Planet Fitness Worldwide",
-    "Bring a Guest Anytime",
-    "Plus much more",
-  ],
-  disabledAmenities: [
-    "Unlimited access to home club",
-    "Free fitness training",
-    "Free WiFi in the club",
-    "PF+ Digital Workouts",
-    "Use of Any Planet Fitness Worldwide",
-    "Bring a Guest Anytime",
-    "Plus much more",
-  ],
+  enabledAmenities: [],
+  disabledAmenities: [],
 };
