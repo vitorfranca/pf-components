@@ -1,6 +1,8 @@
 import React from "react";
 
-import OfferCard from "../src/components/OfferCard";
+import OfferCard from "../src/OfferCard";
+
+import "./css-lib.css";
 
 export default {
   title: "Offer/OfferCard",

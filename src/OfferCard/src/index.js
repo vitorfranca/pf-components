@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "../../css-lib.css";
-
 const OfferCard = ({ blackCard, enabledAmenities, disabledAmenities }) => {
   return (
     <div class={`pf-offercard${blackCard ? "-bc" : ""}`}>
