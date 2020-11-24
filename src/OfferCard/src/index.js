@@ -1,16 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const OfferCard = ({ blackCard, enabledAmenities, disabledAmenities }) => {
+const OfferCard = ({
+  title,
+  blackCard,
+  enabledAmenities,
+  disabledAmenities,
+}) => {
   return (
     <div class={`pf-offercard${blackCard ? "-bc" : ""}`}>
       <h2
         id="card-title-pfx:offers:7c145dbd-7077-11ea-990c-6a14b25803f1"
         class="pf-offercard-title pf-heading-md"
       >
-        <span>
-          PF BLACK CARD<span class="pf-sup">®</span>
-        </span>
+        <span>{title}</span>
       </h2>
       <div class="pf-offercard-price-section">
         <div class="pf-offercard-subtitle pf-body-sm">No Commitment!</div>
@@ -103,6 +106,7 @@ const OfferCard = ({ blackCard, enabledAmenities, disabledAmenities }) => {
 export default OfferCard;
 
 OfferCard.PropTypes = {
+  title: PropTypes.node.isRequired,
   blackCard: PropTypes.bool,
   enabledAmenities: PropTypes.arrayOf(PropTypes.string),
   disabledAmenities: PropTypes.arrayOf(PropTypes.string),

@@ -8,6 +8,11 @@ export default {
   title: "Offer/OfferCard",
   component: OfferCard,
   argTypes: {
+    title: {
+      controle: {
+        type: "string",
+      },
+    },
     blackCard: {
       control: {
         type: "boolean",
@@ -30,6 +35,7 @@ const Template = (args) => <OfferCard {...args} />;
 
 export const BlackCard = Template.bind({});
 BlackCard.args = {
+  title: "PF BLACK CARD®",
   blackCard: true,
   enabledAmenities: [
     "Unlimited access to home club",
@@ -52,6 +58,7 @@ BlackCard.args = {
 };
 
 export const Classic = Template.bind({});
-BlackCard.args = {
+Classic.args = {
+  title: "CLASSIC",
   blackCard: false,
 };
