@@ -56,6 +56,7 @@ export { default } from "./src";
 ### Publishing:
 
 ```
+npm run build
 lerna bootstrap
 lerna publish [major | minor | patch]
 # Are you sure you want to publish these packages? Yes
