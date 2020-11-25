@@ -58,4 +58,5 @@ export { default } from "./src";
 ```
 lerna bootstrap
 lerna publish [major | minor | patch]
+# Are you sure you want to publish these packages? Yes
 ```
